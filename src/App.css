@@ -1,0 +1,55 @@
+/* src/App.css */
+
+/* Fondo general */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #2C2C2C; /* Fondo gris oscuro */
+  color: #FFFFFF; /* Texto blanco */
+  text-transform: uppercase; /* Texto en mayúsculas */
+}
+
+/* Encabezados */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  color: #FFFFFF; /* Blanco */
+}
+
+/* Enlaces */
+a {
+  text-decoration: none;
+  color: #4DA8DA; /* Azul claro */
+}
+
+a:hover {
+  color: #CCCCCC; /* Gris claro */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1F1F1F; /* Gris más oscuro */
+}
+
+.navbar-brand, .nav-link {
+  color: #FFFFFF; /* Texto blanco */
+}
+
+.nav-link:hover {
+  color: #4DA8DA; /* Azul claro al pasar */
+}
+
+/* Badge */
+.badge {
+  font-size: 0.8rem;
+  background-color: #4DA8DA; /* Azul claro */
+  color: #FFFFFF; /* Texto blanco */
+}
+
+/* Contenedor */
+.container {
+  padding: 20px;
+}
+
+.text-center {
+  text-align: center;
+}

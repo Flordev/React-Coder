@@ -1,14 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import CartWidget from './CartWidget';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const NavBar = () => {
-  const categories = ["Categoría 1", "Categoría 2", "Categoría 3"];
+const categories = [
+  { id: 'car_alessia', name: 'Carteras' },  
+  { id: 'accesorio', name: 'Accesorios' }, 
+  { id: 'gafas', name: 'Gafas' },        
+];
 
+const NavBar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">Mi tienda</a>
+        <Link className="navbar-brand" to="/">Mi Tienda</Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -22,9 +27,11 @@ const NavBar = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
-            {categories.map((category, index) => (
-              <li key={index} className="nav-item">
-                <a className="nav-link" href="#">{category}</a>
+            {categories.map(category => (
+              <li key={category.id} className="nav-item">
+                <Link className="nav-link" to={`/category/${category.id}`}>
+                  {category.name}
+                </Link>
               </li>
             ))}
           </ul>

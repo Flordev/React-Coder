@@ -4,9 +4,9 @@ import CartWidget from './CartWidget';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const categories = [
-  { id: 'car_alessia', name: 'Carteras' },  
-  { id: 'accesorio', name: 'Accesorios' }, 
-  { id: 'gafas', name: 'Gafas' },        
+  { id: 'car_alessia', name: 'Carteras' },
+  { id: 'accesorio', name: 'Accesorios' },
+  { id: 'gafas', name: 'Gafas' },
 ];
 
 const NavBar = () => {
@@ -36,7 +36,9 @@ const NavBar = () => {
             ))}
           </ul>
         </div>
-        <CartWidget />
+        <Link to="/checkout">
+          <CartWidget />
+        </Link>
       </div>
     </nav>
   );
